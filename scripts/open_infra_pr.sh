@@ -2,6 +2,11 @@
 
 BRANCH_NAME=gitops-demo-bot/$TAG
 
+echo "--------test--------"
+echo $BRANCH_NAME
+echo "--------test--------END"
+
+
 git clone https://$GH_TOKEN@github.com/cicd-excellence/infra.git
 
 cd infra
