@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BRANCH_NAME=gitops-demo-bot/$TAG
-
+echo
 echo "--------test--------"
 echo $BRANCH_NAME
 echo "--------test--------END"
