@@ -14,4 +14,13 @@ git checkout -b $BRANCH_NAME
 TAG=$TAG make dev.update
 
 git add .
-git commit -m "Update dev to $TAG"
+git commit -m "Update dev to $TAG" 
+#git push origin $BRANCH_NAME # sta merda flasca
+
+gh pr create \
+  --body "" \
+  --title "Update dev to $TAG" \
+  --head "$BRANCH_NAME" \
+  --base "main"
+
+gh pr merge --admin --rebase
