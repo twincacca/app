@@ -5,6 +5,7 @@ echo
 echo "--------test--------"
 echo $BRANCH_NAME
 echo $TAG
+echo cag
 echo "--------test--------END"
 
 
