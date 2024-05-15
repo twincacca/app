@@ -15,4 +15,3 @@ TAG=$TAG make dev.update
 
 git add .
 git commit -m "Update dev to $TAG"
-git push origin $BRANCH_NAME
