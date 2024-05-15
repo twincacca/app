@@ -2,7 +2,8 @@
 
 BRANCH_NAME=gitops-demo-bot/$TAG
 
-git clone https://$GH_TOKEN@github.com/cicd-excellence/infra.git
+#git clone https://$GH_TOKEN@github.com/cicd-excellence/infra.git
+git clone https://${{ secret.GH_TOKEN }}@github.com/cicd-excellence/infra.git
 
 cd infra
 
